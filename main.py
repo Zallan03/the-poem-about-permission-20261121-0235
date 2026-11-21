@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Write one short poem about agency to entry.txt.
 
-Deterministic: the same bytes on every run. Standard library only,
-no network.
+Kit gate: the poem is 1-280 characters, UTF-8, and deterministic --
+the same bytes on every run. Standard library only, no network.
+Output goes to $MAKEFUN_OUTPUT_DIR (created if missing), falling
+back to /output when the variable is unset.
 """
 
 import os
